@@ -6,6 +6,7 @@ const cookieParser = require("cookie-parser");
 
 //Routes
 const authRoute =  require("./routes/auth");
+const postsRoute = require("./routes/posts");
 
 app.use(express.json());
 app.use(express.urlencoded());
@@ -16,6 +17,7 @@ app.get("/api", (req, res) => {
 });
 
 app.use("/api/auth", authRoute);
+app.use("/api/posts", postsRoute);
 
 mongoose.connect(process.env.MONGO_URI).then(() => {
     console.log("Connected to DataBASE");

@@ -5,7 +5,7 @@ const User = require("../models/User");
 const bcrypt = require("bcryptjs")
 const validateRegisterInput = require("../validation/registerValidation");
 const jwt = require("jsonwebtoken");
-const requiresAuth = require("../middelware/permissions");
+const requiresAuth = require("../middleware/permissions");
 
 // @route       GET /api/auth/test
 // @desc        Test the auth route
