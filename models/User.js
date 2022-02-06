@@ -1,5 +1,6 @@
 const { Schema, model } = require("mongoose");
 
+// set the Schema for an account
 const UserSchema = new Schema(
     {
         email: {

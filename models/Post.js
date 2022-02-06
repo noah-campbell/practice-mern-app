@@ -1,5 +1,6 @@
 const { Schema, model } = require("mongoose");
 
+// set the Schema for a users post
 const PostSchema = new Schema(
     {
         user: {

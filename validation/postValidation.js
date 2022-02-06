@@ -2,6 +2,7 @@ const Validator = require("validator");
 const Post = require("../models/Post");
 const isEmpty = require("./isEmpty");
 
+// Catches errors in posts and set limit to 300 characters
 const validatePostInput = data => {
     let errors = {};
 
